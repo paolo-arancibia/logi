@@ -12,13 +12,13 @@ class CreateProductsTable extends Migration
      */
     public function up()
     {
-        Schema::create('produts', function(Blueprint $table) {
+        Schema::create('products', function(Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->float('price');
-            $table->dateTime('created_at');
-            $table->dateTime('update_at');
-            $table->dateTime('deleted_at');
+            $table->integer('browsed'); // contador de visitas
+            $table->nullableTimestamps();
+            $table->timestamp('deleted_at')->nullable();
         });
     }
 
