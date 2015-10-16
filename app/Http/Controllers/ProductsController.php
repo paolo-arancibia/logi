@@ -16,9 +16,7 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        //echo 'List products. By @paolex';
-        //echo '<br/>';
-        return Product::all();
+        return view('product.list', ['products' => Product::all()]);
     }
 
     /**
