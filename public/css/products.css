@@ -3,5 +3,8 @@ ul.products {
 }
 
 ul.products li {
-    display: block;
+    display: inline-block;
+    border: 1px solid #000000;
+    padding: 5px;
+    margin: 5px;
 }

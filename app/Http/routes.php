@@ -17,3 +17,5 @@
 });
 */
 Route::get('/', 'ProductsController@index');
+
+Route::get('product/{id}', 'ProductsController@show');

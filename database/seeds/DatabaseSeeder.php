@@ -2,9 +2,11 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
+use database\seeds\ProductTableSeeder;
 
 class DatabaseSeeder extends Seeder
 {
+
     /**
      * Run the database seeds.
      *
@@ -14,8 +16,10 @@ class DatabaseSeeder extends Seeder
     {
         Model::unguard();
 
-        // $this->call(UserTableSeeder::class);
+        //$this->call(UserTableSeeder::class);
+        $this->call(ProductTableSeeder::class);
 
         Model::reguard();
     }
 }
+
